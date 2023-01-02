@@ -20,7 +20,11 @@ public class Review implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String text;
-	
+
+	@ManyToOne
+	@JoinColumn(name = "user_id")
+	private User user;
+
 	@ManyToOne
 	@JoinColumn(name = "movie_id")
 	private Movie movie;
@@ -56,6 +60,14 @@ public class Review implements Serializable{
 
 	public void setMovie(Movie movie) {
 		this.movie = movie;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	@Override
