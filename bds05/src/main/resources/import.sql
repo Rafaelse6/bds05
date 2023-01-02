@@ -14,4 +14,8 @@ INSERT INTO tb_review (text, user_id, movie_id) VALUES ('It is a really good mov
 INSERT INTO tb_review (text, user_id, movie_id) VALUES ('I do not think it was really scary',2, 1);
 INSERT INTO tb_review (text, user_id, movie_id) VALUES ('I liked it very much', 2, 2);
 
+INSERT INTO tb_role(authority) VALUES ('ROLE_VISITOR');
+INSERT INTO tb_role(authority) VALUES ('ROLE_MEMBER');
 
+INSERT INTO tb_user_role(user_id, role_id) VALUES (1,1);
+INSERT INTO tb_user_role(user_id, role_id) VALUES (2,2);
