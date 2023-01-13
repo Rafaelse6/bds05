@@ -12,7 +12,7 @@ import com.devsuperior.movieflix.services.UserService;
 
 @RestController
 @RequestMapping(value = "/users")
-public class UserResource {
+public class UserController {
 
 	@Autowired
 	private UserService service;
@@ -21,5 +21,11 @@ public class UserResource {
 	public ResponseEntity<UserDTO> findById(@PathVariable Long id){
 		UserDTO dto = service.findById(id);
 		return ResponseEntity.ok().body(dto);
+	}
+	
+	@GetMapping(value = "/profile")
+	public ResponseEntity<UserDTO> findUserWhenLogged(){
+		UserDTO userDTO = service.findProfileWhenUserLogged();
+		return ResponseEntity.ok().body(userDTO);
 	}
 }
