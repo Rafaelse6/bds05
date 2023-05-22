@@ -22,6 +22,6 @@
 
 ### The UML diagram and the rules for this project(written in Portuguese) are the following ones:
 
-![image](https://github.com/Rafaelse6/client-crud/assets/64181619/06175bda-d4ea-4778-ac5c-4a13d3b52d6c)
-![image](https://github.com/Rafaelse6/client-crud/assets/64181619/df05a271-10c4-42b8-b97d-275f57531cc9)
+![image](https://github.com/Rafaelse6/client-crud/assets/64181619/87b44076-336b-44a4-ab01-ad26d95011fc)
 
+### Initial project: https://github.com/devsuperior/bds05
