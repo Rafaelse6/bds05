@@ -2,7 +2,7 @@
 
 > Status: completed ✔️
 
-### This project was build in order to practice TDD, SQL and security in Java with Spring Boot.
+### This project was build in order to practice TDD and security in Java with Spring Boot.
 ## Technologies used:
 
 <table>
